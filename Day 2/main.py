@@ -8,5 +8,5 @@ location = input("Where do you live?: ")
 print()
 print()
 print(f"Thankyou for this. So your name is {yourName}."
-    f"Your favourite food is {faveFood}, your favourite music is {faveMusic}"
-    f" and you live at {location}")
+      f"Your favourite food is {faveFood}, your favourite music is {faveMusic}"
+      f" and you live at {location}")
