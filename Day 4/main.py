@@ -4,6 +4,8 @@ print("""Welcome to your adventure simulator. I am going
 
 print()
 
+colorRed = "\033[31m"
+colorEnd = "\033[0m"
 yourName = input("What is your charatcers name? ")
 yourAge = input("What is your characters age? ")
 yourGender = input("What is your characters gender? ")
@@ -13,8 +15,8 @@ faveFood = input("What is your characters favourite food? ")
 yourEnemy = input("Who is your characters enemy? ")
 
 print(
-    f"""Hello \033[31m{yourName}\033[0m! You are \033[31m{yourAge}\033[0m! and a \033[31m{yourGender}\033[0m!. Your ability to 
-    \033[31m{yourSuperpower}\033[0m! will  make sure you  never have to look at \033[31m{yourEnemy}\033[0m! again. 
-    Go eat \033[31m{faveFood}\033[0m! as you walk down the streets of 
-    \033[31m{location}\033[0m! and use \033[31m{yourSuperpower}\033[0m for good and not evil!"""
+    f"""Hello {colorRed}{yourName}{colorEnd} You are {colorRed}{yourAge}{colorEnd} and a {colorRed}{yourGender}{colorEnd}. Your ability to 
+    {colorRed}{yourSuperpower}{colorEnd} will  make sure you  never have to look at {colorRed}{yourEnemy}{colorEnd} again. 
+    Go eat {colorRed}{faveFood}{colorEnd} as you walk down the streets of 
+    {colorRed}{location}{colorEnd} and use {colorRed}{yourSuperpower}{colorEnd} for good and not evil!"""
 )
