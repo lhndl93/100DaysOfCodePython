@@ -1,23 +1,20 @@
-option = input("Do you want a full year (1) or days left (2)? ")
-leapYear = input("Is it a leap year? ").lower()
+option = int(input("Do you want a full year (1) or days left (2)? "))
 
 seconds = 60
 minutes = 60
 hours = 24
-days = 366 if leapYear == "yes" else 365
-daysLeft = days - int(option)
-
 
 if option == 1:
+  leapYear = input("Is it a leap year? ").lower()
+  days = 366 if leapYear == "yes" and option == 1 else 365
   if leapYear == "yes":
     print("There are", seconds * minutes * hours * days, "seconds in a leap year")
-  else:
+  elif leapYear == "no":
     print("There are", seconds * minutes * hours * days, "seconds in a year")
-elif option == 2:
-  if leapYear == "yes":
-    print("There are", seconds * minutes * hours * daysLeft, "seconds left in a leap year"")
   else:
-    print("There are", seconds * minutes * hours * daysLeft, "seconds left in a year")
-else:
-  print("Invalid option")
-    
+    print("Invalid input")
+elif option == 2:
+  days = int(input("How many days are left? "))
+  print("There are", seconds * minutes * hours * days, " seconds left this year.")
+else: 
+  print("Invalid input")
