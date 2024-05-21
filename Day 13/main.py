@@ -14,4 +14,4 @@ elif percentage >= 60:
 elif percentage >= 50:
   print(f"You got a D with {percentage}%")
 else:
-  print(f"You got a U with {percentage}%")
+  print(f"You got a U with {percentage}%, terrible!")
