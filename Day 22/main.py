@@ -15,7 +15,7 @@ while True:
     if playerGuess < 0:
         print("Can't be a negative number..")
         exit()
-    # checking if the numbe ris too low
+    # checking if the number is too low
     elif playerGuess < myNumber:
         print("oooooh too low buddy")
     # checking is number it too high
