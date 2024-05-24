@@ -17,10 +17,12 @@ def six_and_eight():
 
 while True:
     which_option = input("What option do you want? (1 / 2) ")
+    
     if which_option == "1":
         sides = int(input("How many sides does the dice have? "))
         random_number = roll_dice(sides)
         print(random_number)
+        
     elif which_option == "2":
         continue_choosing = "yes"
         while continue_choosing == "yes":
@@ -29,6 +31,7 @@ while True:
             print(f"Characters name: {character_name}")
             print(f"Characters Health: {character_health}hp")
             continue_choosing = input("Do you want to do another character? (yes/no): ").lower()
+            
     else:
         print("Please choose the correct option..")
         
