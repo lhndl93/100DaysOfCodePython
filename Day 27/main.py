@@ -23,7 +23,8 @@ def character_race():
 while True:
   print("Welcome to the character creation.. ")
   time.sleep(1)
-  print("I am going to ask some questions, then we will generate the character..")
+  print("I am going to ask some questions, then we will generate the "
+        "Health and Strength")
   time.sleep(1)
   print()
   
@@ -33,11 +34,11 @@ while True:
   strength = character_strength()
 
   if race != "human" and race != "elf" and race != "wizard" and race != "orc":
-    print("Incorrect race, start again please.. ")
+    print("Incorrect race, start again.. ")
     continue
   else:
     print(f"""
-    Character created!!
+    Character Builder!!
 
     Character Name: {name}
     Character Race: {race}
@@ -56,9 +57,8 @@ while True:
   else:
     print("Okay, we won't create anymore!")
     time.sleep(1)
-    print(f"Have fun on your Journey, {name}!")
-    time.sleep(1)
     os.system("clear")
+    print(f"Have fun on your Journey, {name}!")
     break
   
   
