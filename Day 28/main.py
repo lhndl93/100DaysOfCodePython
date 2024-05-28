@@ -131,11 +131,13 @@ while play_game == "yes":
     if player1_health <= 0:
       print("Player 1 has died. Player 2 wins.")
       health_update()  
+      print(f"This took {round} rounds!! Good job.")
       break
       
     elif player2_health <= 0:
       print("Player 2 has died. Player 1 wins.")
       health_update()  
+      print(f"This took {round} rounds!! Good job.")
       break
       
     else:
