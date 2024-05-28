@@ -56,8 +56,9 @@ while True:
   else:
     print("Okay, we won't create anymore!")
     time.sleep(1)
-    os.system("clear")
     print(f"Have fun on your Journey, {name}!")
+    time.sleep(1)
+    os.system("clear")
     break
   
   
