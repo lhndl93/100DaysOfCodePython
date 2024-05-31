@@ -51,22 +51,13 @@ while True:
     time.sleep(1)
     print("I am going to ask some questions, then we will generate the characters..")
     time.sleep(1)
-    print()
-
-    
+    print()    
     
     player1_name = character_name()
     player1_race = character_race()
     player1_health = character_health()
     player1_strength = character_strength()
     
-    # if player1_race == "wizard":
-    #   player1_magic = character_magic()
-    # elif player1_race == "elf":
-    #   player1_range = character_range()
-    # else:
-    #   player1_strength = character_strength()
-
     if player1_race not in valid_race:
         print("Incorrect race, start again please.. ")
         os.system("clear")
@@ -83,13 +74,6 @@ while True:
     player2_health = character_health()
     player2_strength = character_strength()
     
-    # if player2_race == "wizard":
-    #   player2_magic = character_magic()
-    # elif player2_race == "elf":
-    #   player2_range = character_range()
-    # else:
-    #   player2_strength = character_strength()
-
     if player2_race not in valid_race:
         print("Incorrect race, start again please.. ")
         os.system("clear")
@@ -99,21 +83,6 @@ while True:
     time.sleep(1)
     os.system("clear")
     time.sleep(1)
-
-    
-    # if player1_race == "wizard":
-    #   print_stats1 = f"Character Magic: {player1_magic}"
-    # elif player1_race == "elf":
-    #   print_stats1 = f"Character Range: {player1_range}"
-    # else:
-    #   print_stats1 = f"Character Strength: {player1_strength}"
-
-    # if player2_race == "wizard":
-    #   print_stats2 = f"Character Magic: {player2_magic}"
-    # elif player2_race == "elf":
-    #   print_stats2 = f"Character Range: {player2_range}"
-    # else:
-    #   print_stats2 = f"Character Strength: {player2_strength}"
 
     print_stats1 = f"Character Strength: {player1_strength}"
     print_stats2 = f"Character Strength: {player2_strength}"
