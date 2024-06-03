@@ -1,6 +1,14 @@
 import random
 import time
 import os
+import platform
+
+def clear():
+    system = platform.system()
+    if system == "Windows":
+        return os.system('cls')
+    else:
+        return os.system('clear')
 
 def text_color(color):
   if color == "red":
@@ -66,7 +74,7 @@ while True:
     option_two = f"{text_color('green')}Option 2: Generating character health"
     option_three = f"{text_color('purple')}Option 3: Create Character for game"
     option_four = f"{text_color('yellow')}Option 4: Create Character and battle"
-    os.system("cls")
+    clear()
     print(f"{title: ^75}")
     time.sleep(0.5)
     print(f"{option_one: ^75}")
@@ -95,6 +103,7 @@ while True:
     
     elif which_option == "3":
         while True:
+            clear()
             print("Welcome to the character creation.. ")
             time.sleep(1)
             print("I am going to ask some questions, then we will generate the character..")
@@ -125,14 +134,14 @@ while True:
             if generate_another == "yes":
                 print("Let's generate another..")
                 time.sleep(1)
-                os.system("cls")
+                clear()
                 continue
             else:
                 print("Okay, we won't create anymore!")
                 time.sleep(1)
                 print(f"Have fun on your Journey, {name}!")
                 time.sleep(1)
-                os.system("cls")
+                clear()
                 break
         break
               
@@ -152,12 +161,12 @@ while True:
             
             if player1_race not in valid_race:
                 print("Incorrect race, start again please.. ")
-                os.system("cls")
+                clear()
                 continue
             
             print("Character 1 created!!") 
             time.sleep(1)
-            os.system("cls")
+            clear()
             time.sleep(1)
 
             print("Now for player 2...")
@@ -168,12 +177,12 @@ while True:
             
             if player2_race not in valid_race:
                 print("Incorrect race, start again please.. ")
-                os.system("cls")
+                clear()
                 continue
             
             print("Character 2 created!!") 
             time.sleep(1)
-            os.system("cls")
+            clear()
             time.sleep(1)
 
             print_stats1 = f"Character Strength: {player1_strength}"
@@ -197,7 +206,7 @@ while True:
             play_game = input("Are you ready to battle?! (yes/no) ")
             round = 0
             while play_game == "yes":
-                os.system("cls")
+                clear()
                 round += 1
                 damage_result = damage()
                 damage_int = int(damage_result)
