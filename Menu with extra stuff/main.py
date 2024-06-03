@@ -130,7 +130,7 @@ while True:
             else:
                 print("Okay, we won't create anymore!")
                 time.sleep(1)
-                print(f"Have fun on your Journey, {3name}!")
+                print(f"Have fun on your Journey, {name}!")
                 time.sleep(1)
                 os.system("cls")
                 break
