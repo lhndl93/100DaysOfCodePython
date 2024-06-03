@@ -1,9 +1,9 @@
 import os
 
-list = []
+todo_list = []
 
 def print_list():
-  for item in list:
+  for item in todo_list:
     print(item)
 
 def print_menu():
@@ -39,29 +39,29 @@ while True:
   elif option == "2":
     os.system("clear")
     new_item = input("What would you like to add? ")
-    list.append(new_item)
+    todo_list.append(new_item)
     continue
   elif option == "3":
     os.system("clear")
     which = input("What would you like to edit? ")
-    if which in list:
-      list.remove(which)
+    if which in todo_list:
+      todo_list.remove(which)
       new_list_item = input("What do you want to change it to? ")
-      list.append(new_list_item)
+      todo_list.append(new_list_item)
   elif option == "4":
     os.system("clear")
     which = input("What would you like to delete? ")
-    if which in list:
+    if which in todo_list:
       you_sure = input("Are you sure you want to delete this item? ")
       if you_sure == "yes":
-        list.remove(which)
+        todo_list.remove(which)
       else:
         print("Okay, lets go back")
         continue
   elif option == "5":
     you_sure = input("Are you sure you want to delete the whole list? ")
     if you_sure == "yes":
-      list.clear()
+      todo_list.clear()
     else:
       print("Okay, lets go back")
       continue
